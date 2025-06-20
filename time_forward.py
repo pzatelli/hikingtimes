@@ -86,7 +86,7 @@ for k in range(69,222):
 	b = "(0.0012*pendenza_gradi*pendenza_gradi*pendenza_gradi-0.0194*pendenza_gradi*pendenza_gradi-0.1559*pendenza_gradi+4.2097)"
 	c = "(-0.00008*pendenza_gradi*pendenza_gradi*pendenza_gradi+0.0091*pendenza_gradi*pendenza_gradi-0.3296*pendenza_gradi+4.5583)"
 	d = "(0.0003*pendenza_gradi*pendenza_gradi-0.0437*pendenza_gradi+1.6718)"
-	e = "(0.0002*pendenza_gradi*pendenza_gradi-0.0285*pendenza_gradi+1.162)"
+	e = "(0.0002*pendenza_gradi*pendenza_gradi-0.0285*pendenza_gradi+1.48065)"
 	gscript.run_command('db.execute', sql="UPDATE " + str(mappa) +  "_2 SET velocita=" + str(a) + " WHERE pendenza_gradi>-45 AND pendenza_gradi<=-7")
 	gscript.run_command('db.execute', sql="UPDATE " + str(mappa) +  "_2 SET velocita=" + str(b) + " WHERE pendenza_gradi>-7 AND pendenza_gradi<=4")
 	gscript.run_command('db.execute', sql="UPDATE " + str(mappa) +  "_2 SET velocita=" + str(c) + " WHERE pendenza_gradi>4 AND pendenza_gradi<=25")
